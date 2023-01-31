@@ -4,6 +4,11 @@ library(jsonlite)
 library(httr)
 library(rlist)
 
+# Task 1: Registered on github.com
+# Task 2: Public repository initialized
+# Task 3: Stuck to the standard Git workflow
+# Task 4: Including hyperlink in HTML file 
+
 # Task 5: Getting to know the API
 #The default quota is 5000 API calls per day and rate limitation of 5 requests per second.
 
@@ -23,7 +28,7 @@ temp <- content(response)
 #This returns a list of 20 events for which you can buy tickets via ticketmaster
 #Each event element also contains additional data e.g. images, a classification and the start-/end time of ticket sales
 
-# Task 8:
+# Task 8: Extracting certain information into a dataframe
 
 #number of event -> links -> embedded -> 
 temp[[1]][[1]][[1]][[1]]
@@ -66,4 +71,9 @@ for(i in 1:20){
 for(i in 1:20){
   df[i,7] <- temp[["_embedded"]][["events"]][[i]][["_embedded"]][["venues"]][[1]][["location"]][["latitude"]]
 }
+
+str(df) #as instructed
+
+# Task 9: Advanced API interaction
+
 
