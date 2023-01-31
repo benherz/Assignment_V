@@ -121,5 +121,5 @@ for(i in 1:20){
 ##the file somehow, even if I only try to Knit the standard RMarkdown default page.
 ##Nevertheless I wanted to upload what I had so far, hoping it might be worth like half a point or something.
 
-# Github repository:
+# Github repository: https://github.com/benherz/Assignment_V
 #  
